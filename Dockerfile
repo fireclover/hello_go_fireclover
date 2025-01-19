@@ -25,8 +25,6 @@ WORKDIR /
 # Copy over the binary built from the previous stage
 COPY --from=builder /hello_go_fireclover /hello_go_fireclover
 
-RUN echo 'Who run the world? Girls!'
-
 # Make sure to expose the port the HTTP server is using
 EXPOSE 3000 22
 
